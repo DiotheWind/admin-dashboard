@@ -90,7 +90,7 @@ ul li a {
     display: grid;
     grid-template-rows: 1fr 1fr;
     padding-left: 50px;
-    padding-top: 15px;
+    gap: 5px;
 }
 
 .header-top-left svg,
@@ -132,4 +132,44 @@ ul li a {
 
 .header-top-right {
     gap: 25px;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.header-bottom-left {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.header-bottom-left img {
+    height: 80px;
+    width: 93px;
+    border-radius: 50%;
+}
+
+.enlarge-text {
+    font-size: 20px;
+}
+
+.header-bottom-right {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 30px;
+    margin-left: 140px;
+}
+
+.header-bottom-right button {
+    background-color: var(--blue);
+    color: var(--white);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    width: 75px;
+    height: 40px;
+    cursor: pointer;
 }
